@@ -1,1 +1,78 @@
-qccc
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<div id="form">
+  <h1 id="title">Form Title</h1>
+  <p id="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+  <form action="" id="survey-form">
+    <ul id="basicInfo">
+      <li><label for="" id="name-label">Your name</label>
+        <input placeholder="Name" type="text" required id="name"></li>
+      <li><label for="" id="email-label">Your Email Address</label>
+        <input placeholder="Email" type="email" required id="email"></li>
+      <li><label for="" id="number-label">Your Birth Month</label>
+        <input placeholder="Number" type="number" id="number" min="1" max="12"></li>
+    </ul>
+    <ul>
+      <li id="dropDown">
+        <label for="dropdown">Pick one:</label>
+        <select id="dropdown" name="cars">
+        <option value="one">One</option>
+        <option value="two">Two</option>
+        <option value="three">Three</option>
+        <option value="four">Four</option>
+        </select>
+      </li>
+    </ul>
+    <ul id="radioButtons">
+      <li><input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label></li>
+      <li><input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label></li>
+      <li><input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label></li>
+    </ul>
+    <ul id="checkBox">
+      <li><input type="checkbox" name="vehicle1" value="bike" id="">
+        <label for="vehicle1"> I have a bike</label></li>
+      <li><input type="checkbox" name="vehicle2" value="motorcycle" id="">
+        <label for="vehicle1"> I have a motorcycle</label></li>
+      <li><input type="checkbox" name="vehicle3" value="car" id="">
+        <label for="vehicle1"> I have a car</label></li>
+      <li><input type="checkbox" name="vehicle4" value="truck" id="">
+        <label for="vehicle1"> I have a truck</label></li>
+    </ul>
+    <div id="textArea">
+      <textarea name="textreview" id="" cols="30" rows="10"></textarea>
+    </div>
+    <button id="submit">Submit</button>
+  </form>
+</div>
+<style>
+  div#form {
+    border: solid 2px grey;
+    padding: 10px 20px;
+    width: max-content;
+    margin: 30px auto;
+}
+form#survey-form li {
+    list-style: none;
+}
+ul#basicInfo {
+    margin: auto;
+    padding: 0;
+}
+#basicInfo input {
+    width: 100%;
+    padding: 6px;
+    margin: 5px 0;
+}
+</style>
